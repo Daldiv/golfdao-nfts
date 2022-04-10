@@ -34,6 +34,8 @@
   
   Integration with frontend Dapps will require ***msg.value*** to be appended that meets the contract fixed token price of 700 ether, though since this is on Matic the rough equivalent of 0.3 real ether is the goal. Updating the minting cost can be achieved post deployment of implementation.
   
+  Contract will withhold recieved payments from NFT sales and is setup to payout to 2 fixed addresses. These payouts must be executed manually by the contract owner which can be a separate address. To change the payout settings the implementation must be upgraded.
+  
   &nbsp;
   
   
