@@ -11,6 +11,8 @@
 
 
 ### <H2> Mainnet </H2>
+  SimpleDApp on Mainet: https://oneclickdapp.com/griffin-romeo
+
   Polygon Mainet Proxy Deployment: https://polygonscan.com/address/0x2fBE590F96D9Dbc46299ee809862338F70f23e25
 
   Polygon Mainet Implementation Deployment: https://polygonscan.com/address/0x533bA2D9291ff2a53Aac0a5edbdA6ca5f0969184
@@ -24,6 +26,8 @@
 
   
   Updated Implementation must respect EVM storage structures and variables should not be modified. New features on upgrades can only be APPENDED. Failure to comply will result in messed up storage mapping and will result in collisions. https://docs.openzeppelin.com/upgrades-plugins/1.x/proxies
+  
+  Integration with frontend Dapps will require msg.value to be appended that meets the contract fixed token price of 700 ether, though since this is on Matic the rough equivalent of 0.3 real ether is the goal. Updating the minting cost can be achieved post deployment of implementation.
   
   MIT License.
 
