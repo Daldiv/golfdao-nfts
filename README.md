@@ -20,14 +20,14 @@
 
 ### <H2> Info </H2>
   
-  UUPS proxy pattern for ERC721 upgradable contract deployment. Gas optimized, URI's are updateable post mint, Optional Access Controls and roles can be easily added.
+  UUPS proxy pattern for ERC721 upgradable contract deployment. Gas optimized, URI's are updateable post mint, Optional Access Controls and roles (say, for minting only permissions, for "members") can be easily added.
   
   Upgrades must me done via Hardat using the OpenZeppelin Hardhat-Upgrades plugin. Can also be configured for Truffle deployment. Remix is NOT SUPPORTED.   https://docs.openzeppelin.com/upgrades-plugins/1.x/api-hardhat-upgrades
 
   
   Updated Implementation must respect EVM storage structures and variables should not be modified. New features on upgrades can only be APPENDED. Failure to comply will result in messed up storage mapping and will result in collisions. https://docs.openzeppelin.com/upgrades-plugins/1.x/proxies
   
-  Integration with frontend Dapps will require msg.value to be appended that meets the contract fixed token price of 700 ether, though since this is on Matic the rough equivalent of 0.3 real ether is the goal. Updating the minting cost can be achieved post deployment of implementation.
+  Integration with frontend Dapps will require ***msg.value*** to be appended that meets the contract fixed token price of 700 ether, though since this is on Matic the rough equivalent of 0.3 real ether is the goal. Updating the minting cost can be achieved post deployment of implementation.
   
   MIT License.
 
