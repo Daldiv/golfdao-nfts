@@ -1,4 +1,4 @@
-##<H1> GolfDAO NFT Repo </H1>
+<H1> GolfDAO NFT Repo </H1>
 
 ### <H2> Mumbai </H2>
 
