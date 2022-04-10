@@ -14,7 +14,7 @@
 
 
 ### <H2> Mainnet </H2>
-  SimpleDApp on Mainet: https://oneclickdapp.com/griffin-romeo
+  SimpleDAPP on Mainet: https://oneclickdapp.com/griffin-romeo
 
   Polygon Mainet Proxy Deployment: https://polygonscan.com/address/0x2fBE590F96D9Dbc46299ee809862338F70f23e25
 
