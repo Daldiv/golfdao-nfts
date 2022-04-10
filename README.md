@@ -36,6 +36,9 @@
   
   &nbsp;
   
+  
+  ### <H2> Disclaimer </H2> 
+  
   I am not liable for forks or the usage of this code in inproper ways and without prior written agreement. Code has been tested and built on industry standards. Use at your own risk.
   
   MIT License.
