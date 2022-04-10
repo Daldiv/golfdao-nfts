@@ -2,8 +2,6 @@
 
 ### <H2> Mumbai </H2>
 
-&nbsp;
-
   SimpleDAPP on Mumbai: https://oneclickdapp.com/samuel-change
   
   Polygon Mumbai Proxy Deployment: https://mumbai.polygonscan.com/address/0xd370E6d057B4265D05fd673123139bc46b03a3Ee
@@ -22,6 +20,8 @@
 
   Polygon Mainet Implementation Deployment: https://polygonscan.com/address/0x533bA2D9291ff2a53Aac0a5edbdA6ca5f0969184
 
+&nbsp;
+
 
 ### <H2> Info </H2>
   
@@ -33,6 +33,10 @@
   Updated Implementation must respect EVM storage structures and variables should not be modified. New features on upgrades can only be APPENDED. Failure to comply will result in messed up storage mapping and will result in collisions. https://docs.openzeppelin.com/upgrades-plugins/1.x/proxies
   
   Integration with frontend Dapps will require ***msg.value*** to be appended that meets the contract fixed token price of 700 ether, though since this is on Matic the rough equivalent of 0.3 real ether is the goal. Updating the minting cost can be achieved post deployment of implementation.
+  
+  &nbsp;
+  
+  I am not liable for forks or the usage of this code in inproper ways and without prior written agreement. Code has been tested and built on industry standards. Use at your own risk.
   
   MIT License.
 
