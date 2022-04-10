@@ -17,8 +17,8 @@ const config = {
       optimizer: {
         enabled: true,
         runs: 200
-      }
-    }
+      	},
+    	},
   },
 	networks: {
 		localhost: {
@@ -43,14 +43,15 @@ const config = {
       gasPrice: 43000000000,
       gas: 4000000,
     },
-
 	},
   mocha: {
-    timeout: 40000
-  }
+    timeout: 40000,
+	},
 	etherscan: {
 	apiKey: POLYSCAN_API_KEY,
+	},
 }
+
 
 export default config
 
