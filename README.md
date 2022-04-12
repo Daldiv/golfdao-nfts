@@ -2,11 +2,11 @@
 
 ### <H2> Mumbai </H2>
 
-  SimpleDAPP on Mumbai: https://oneclickdapp.com/samuel-change
+  SimpleDAPP on Mumbai: https://oneclickdapp.com/tower-glass
   
-  Polygon Mumbai Proxy Deployment: https://mumbai.polygonscan.com/address/0xd370E6d057B4265D05fd673123139bc46b03a3Ee
+  Polygon Mumbai Proxy Deployment: https://mumbai.polygonscan.com/address/0x74ba324356241741a936f5c86769c28550808d1d
   
-  Polygon Mumbai Implementation Deployment: https://mumbai.polygonscan.com/address/0x461e17e0cd1c36b62b319d0913665896d049eb66#code
+  Polygon Mumbai Implementation Deployment: https://mumbai.polygonscan.com/address/0xc62ff53a59181b10b046e6ab049b8186232056dd
   
   OpenSea Mumbai Test Shop: https://testnets.opensea.io/collection/golfdao-sfnagxod7r
 
@@ -14,11 +14,11 @@
 
 
 ### <H2> Mainnet </H2>
-  SimpleDAPP on Mainet: https://oneclickdapp.com/griffin-romeo
+  SimpleDAPP on Mainet: https://oneclickdapp.com/papa-solar
 
   Polygon Mainet Proxy Deployment: https://polygonscan.com/address/0x2fBE590F96D9Dbc46299ee809862338F70f23e25
 
-  Polygon Mainet Implementation Deployment: https://polygonscan.com/address/0x533bA2D9291ff2a53Aac0a5edbdA6ca5f0969184
+  Polygon Mainet Implementation Deployment: https://polygonscan.com/address/0xe1192cd62897E92c6Ad9D50bfa2d6934C99AF04c
 
 &nbsp;
 
@@ -35,6 +35,8 @@
   Integration with frontend Dapps will require ***msg.value*** to be appended that meets the contract fixed token price of 700 ether, though since this is on Matic the rough equivalent of 0.3 real ether is the goal. Updating the minting cost can be achieved post deployment of implementation.
   
   Contract will withhold recieved payments from NFT sales and is setup to payout to 2 fixed addresses. These payouts must be executed manually by the contract owner which can be a separate address. To change the payout settings the implementation must be upgraded.
+  
+  Batch minting has been added, though minting more than 30 in a single transaction usually hits the gas limit!
   
   &nbsp;
   
