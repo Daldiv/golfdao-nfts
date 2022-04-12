@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.4;
+pragma solidity ^0.8.11;
 
 // ███████╗ █████╗ ███╗   ██╗██████╗ ███████╗███████╗ ███████╗
 // ██╔════╝██╔══██╗████╗  ██║██╔══██╗██╔════╝██╔══██║ ██╔════╝
@@ -67,22 +67,28 @@ contract GolfDAO_V2 is Initializable, ERC721Upgradeable, ERC721EnumerableUpgrade
         cost = _newCost;
     }
 
+    function updateMaxSupply (uint256 _newMaxSupply) public onlyOwner {
+        maxSupply = _newMaxSupply;
+    }
+
     function updateURI(uint256 tokenId, string memory newTokenURI) public {
         require(_isApprovedOrOwner(_msgSender(), tokenId), "ERC721: caller is not owner nor approved");
         _setTokenURI(tokenId, newTokenURI);
     }
 
-    function safeMint(address to, string memory uri) public payable{
+    function safeMint(address to, string memory uri, uint256 _mintAmount) public payable{
         if (msg.sender != owner()) {
-            require(msg.value >= cost, 'Insufficient funds!');
+            require(msg.value >= cost * _mintAmount, 'Not enough $$$ sent to purchase!');
         }
-        uint256 tokenId = _tokenIdCounter.current();
-        if (tokenId <= maxSupply) {
-            revert('Max supply reached');
+        uint256 supply = totalSupply();
+        require(_mintAmount > 0, "Need to mint at least 1 NFT");     
+        require(supply + _mintAmount <= maxSupply, 'Max Supply Reached!');
+        for(uint256 i = 1; i <= _mintAmount; i++) {
+            uint256 tokenId = _tokenIdCounter.current();
+            _tokenIdCounter.increment();
+            _safeMint(to, tokenId);
+            _setTokenURI(tokenId, uri);
         }
-        _tokenIdCounter.increment();
-        _safeMint(to, tokenId);
-        _setTokenURI(tokenId, uri);
     }
 
     function _beforeTokenTransfer(address from, address to, uint256 tokenId)
