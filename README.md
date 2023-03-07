@@ -4,9 +4,9 @@
 
   SimpleDAPP on Mumbai: https://oneclickdapp.com/tower-glass
   
-  Polygon Mumbai Proxy Deployment: https://mumbai.polygonscan.com/address/0x74ba324356241741a936f5c86769c28550808d1d
+  Polygon Mumbai Proxy Deployment: https://mumbai.polygonscan.com/address/0xf311b3015ee8cf4fb8b394f80449acef1c65c6f5
   
-  Polygon Mumbai Implementation Deployment: https://mumbai.polygonscan.com/address/0xc62ff53a59181b10b046e6ab049b8186232056dd
+  Polygon Mumbai Implementation Deployment: https://mumbai.polygonscan.com/address/0xcd08859763945091c1d15bafbeffea40e0831cbb
   
   OpenSea Mumbai Test Shop: https://testnets.opensea.io/collection/golfdao-sfnagxod7r
 
@@ -16,9 +16,9 @@
 ### <H2> Mainnet </H2>
   SimpleDAPP on Mainet: https://oneclickdapp.com/papa-solar
 
-  Polygon Mainet Proxy Deployment: https://polygonscan.com/address/0xe1192cd62897E92c6Ad9D50bfa2d6934C99AF04c
+  Polygon Mainet Proxy Deployment: https://polygonscan.com/address/0x6171025594056f544266e162293acfdec6dfefe5
 
-  Polygon Mainet Implementation Deployment: https://polygonscan.com/address/0x58120b59893b0504dAB5DF72f45927b6300d0208
+  Polygon Mainet Implementation Deployment: https://polygonscan.com/address/0x1cbb2e306edf1d70ba3d3c7aa1608c975f65ceea
 
 &nbsp;
 
